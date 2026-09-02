@@ -55,3 +55,17 @@ OMP_NUM_THREADS=N ./build/kunroute_bench artifacts/weights.bin 100000
 - 代码风格高度紧凑：单字母变量、无 docstring、长单行表达式，中文注释稀缺。修改时保持该风格，不必补注释或扩充。
 - 用户面向的文档/README/技术方案与路径名均为中文；标识符、字段名、JSON key 为英文（如 `quality_score`、`skill_qa`）。
 - 人为拆分保留 70/15/15 与评估指标含义：评估关注 `quality_pass_rate`、`oracle_route_accuracy`、`relative_cost_vs_all_strong`、`selected_latency_p95` 等（见 `results/sample_evaluation.json`）。改动前向/特征维度时，`INPUT_DIM`、`router_weights.npz` 与 `weights.bin`、C++ 内核需同步更新，且 `test_query_feature_shape`/`test_pair_feature_shape` 断言（54 / INPUT_DIM）会保护该一致性。
+
+## 项目文本写作要求
+
+撰写面向评审/用户的**项目文本**（技术方案、提交文档、README、答辩/申报材料、商业计划书等）时，须遵守下列要求：
+
+- **参照格式范本**：写作前必须先通读仓库顶层 `格式参考文本_行文结构.md`（本项目《格式参考文本.pdf》的九章行文结构提取），并按其中的卷面与分页框架、标题层级与编号、`图x-y`/`表x-y` 连续编号、图表配套规律及各章写作套路来组织文本。
+- **写作风格**：专业、详实；突出技术创新点（把"新在哪里、难在哪里、验证了什么、带来什么收益"讲清楚），避免泛泛而谈；引用的技术事实（特征维度、模型结构、损失权重、校准分位、超参、路由决策规则等）均以 `KunRoute_竞赛提交包/` 的真实代码与配置为准。
+- **逻辑严谨闭环**：每个论断遵循"论点 → 机制/方法 → 证据（指标/算例/代码） → 小结"的闭环；前后口径一致、章节互证，不出现无依据的断言或前后矛盾的数据。
+- **内容必须严格贴合代码**：禁止虚构/杜撰不存在于 `src/`、`cpp/`、`config/`、`data/`、`results/`、`tests/` 的功能、公式、超参、流程或数字。
+  - 指标只能引用 `results/*.json`、`results/kernel_selfcheck.txt`、`results/standard_case.json` 等实际输出；
+  - 流程只能对应 `run_all.sh` 与 `src/*.py` 的真实调用链；
+  - 模型池/超参只能对应 `config/model_registry.csv` 与 `config/router_config.json`；
+  - 架构/伪代码必须能还原到 `src/` 与 `cpp/router_kernel.cpp` 的实现。
+  - 文本中确需出现的占位/待补项（如市场数字、定价、财务、成员资料等仓库内不存在的内容）须显式标注 `【待补】`，不得自行编造。
