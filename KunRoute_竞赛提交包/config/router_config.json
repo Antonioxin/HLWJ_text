@@ -1,0 +1,12 @@
+{
+  "quality_threshold": 0.8,
+  "quality_margin_quantile": 0.90,
+  "cost_tie_epsilon": 0.01,
+  "hidden_dim": 48,
+  "epochs": 240,
+  "batch_size": 256,
+  "learning_rate": 0.003,
+  "seed": 20260901,
+  "online_quality_blend": 0.15,
+  "online_latency_blend": 0.20
+}

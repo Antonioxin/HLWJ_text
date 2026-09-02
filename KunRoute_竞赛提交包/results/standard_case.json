@@ -1,0 +1,96 @@
+{
+  "query": "解释缓存机制的基本原理，并举一个实际例子。",
+  "tau": 0.8,
+  "route": {
+    "model": "Model2",
+    "task": "qa",
+    "pred_quality": 0.891671019425875,
+    "quality_safe": 0.834947090974337,
+    "pred_cost": 1.442471981048584,
+    "pred_latency": 707.5806640625,
+    "constraint_unmet": false,
+    "reason": "QUALITY_PASS_MIN_COST"
+  },
+  "scores": [
+    {
+      "model": "Model1",
+      "task": "qa",
+      "pred_quality": 0.8686712205105189,
+      "quality_safe": 0.8036078691177729,
+      "pred_cost": 2.052349090576172,
+      "pred_latency": 620.7859863281251
+    },
+    {
+      "model": "Model2",
+      "task": "qa",
+      "pred_quality": 0.891671019425875,
+      "quality_safe": 0.834947090974337,
+      "pred_cost": 1.442471981048584,
+      "pred_latency": 707.5806640625
+    },
+    {
+      "model": "Model3",
+      "task": "qa",
+      "pred_quality": 0.8812559713052194,
+      "quality_safe": 0.791183029525129,
+      "pred_cost": 2.352494239807129,
+      "pred_latency": 879.6924804687501
+    },
+    {
+      "model": "Model4",
+      "task": "qa",
+      "pred_quality": 0.9404615307988999,
+      "quality_safe": 0.8781545246782182,
+      "pred_cost": 2.3133323192596436,
+      "pred_latency": 1012.0148437500001
+    },
+    {
+      "model": "Model5",
+      "task": "qa",
+      "pred_quality": 0.9450790666849401,
+      "quality_safe": 0.889939018419483,
+      "pred_cost": 3.5870418548583984,
+      "pred_latency": 1079.8229492187502
+    },
+    {
+      "model": "Model6",
+      "task": "qa",
+      "pred_quality": 0.9388947356336328,
+      "quality_safe": 0.8815169382684442,
+      "pred_cost": 4.1045427322387695,
+      "pred_latency": 1188.67431640625
+    },
+    {
+      "model": "Model7",
+      "task": "qa",
+      "pred_quality": 0.9548443123266969,
+      "quality_safe": 0.9019823595450196,
+      "pred_cost": 4.9961652755737305,
+      "pred_latency": 1295.4784179687501
+    },
+    {
+      "model": "Model8",
+      "task": "qa",
+      "pred_quality": 0.9461059379640409,
+      "quality_safe": 0.9042916464868375,
+      "pred_cost": 6.822328567504883,
+      "pred_latency": 1342.7313476562501
+    },
+    {
+      "model": "Model9",
+      "task": "qa",
+      "pred_quality": 0.9455529421342173,
+      "quality_safe": 0.9036731451524057,
+      "pred_cost": 9.657327651977539,
+      "pred_latency": 1517.58212890625
+    },
+    {
+      "model": "Model10",
+      "task": "qa",
+      "pred_quality": 0.950279234015851,
+      "quality_safe": 0.904084120356946,
+      "pred_cost": 13.090343475341797,
+      "pred_latency": 1671.1727539062501
+    }
+  ]
+}

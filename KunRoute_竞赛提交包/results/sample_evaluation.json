@@ -1,0 +1,10 @@
+{
+  "test_queries": 75,
+  "quality_pass_rate": 0.9733333333333334,
+  "quality_violation_rate": 0.026666666666666616,
+  "oracle_route_accuracy": 0.4533333333333333,
+  "average_selected_cost": 4.212044,
+  "average_oracle_cost": 2.2134893333333334,
+  "relative_cost_vs_all_strong": 0.3633648963270623,
+  "selected_latency_p95": 1653.19
+}

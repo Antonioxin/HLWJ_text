@@ -1,0 +1,95 @@
+{
+  "query": "请用 Python 编写函数，对整数列表去重并保持原顺序，同时说明时间复杂度。",
+  "route": {
+    "model": "Model10",
+    "task": "code",
+    "pred_quality": 0.853712671279505,
+    "quality_safe": 0.806181686400965,
+    "pred_cost": 12.460212707519531,
+    "pred_latency": 1723.2367187500001,
+    "constraint_unmet": false,
+    "reason": "QUALITY_PASS_MIN_COST"
+  },
+  "scores": [
+    {
+      "model": "Model1",
+      "task": "code",
+      "pred_quality": 0.5567993013238332,
+      "quality_safe": 0.4586957929705998,
+      "pred_cost": 2.500112771987915,
+      "pred_latency": 862.919970703125
+    },
+    {
+      "model": "Model2",
+      "task": "code",
+      "pred_quality": 0.5480255026710464,
+      "quality_safe": 0.46728882383231657,
+      "pred_cost": 2.484867811203003,
+      "pred_latency": 915.0625976562501
+    },
+    {
+      "model": "Model3",
+      "task": "code",
+      "pred_quality": 0.7536668053374234,
+      "quality_safe": 0.7098542085394802,
+      "pred_cost": 4.082499027252197,
+      "pred_latency": 1020.23681640625
+    },
+    {
+      "model": "Model4",
+      "task": "code",
+      "pred_quality": 0.679768030887282,
+      "quality_safe": 0.604417746310866,
+      "pred_cost": 3.3308887481689453,
+      "pred_latency": 1072.8095703125
+    },
+    {
+      "model": "Model5",
+      "task": "code",
+      "pred_quality": 0.7392231799120501,
+      "quality_safe": 0.6695908583159045,
+      "pred_cost": 4.62825870513916,
+      "pred_latency": 1152.9738281250002
+    },
+    {
+      "model": "Model6",
+      "task": "code",
+      "pred_quality": 0.7961478236648835,
+      "quality_safe": 0.7451304617855347,
+      "pred_cost": 5.670846939086914,
+      "pred_latency": 1245.95390625
+    },
+    {
+      "model": "Model7",
+      "task": "code",
+      "pred_quality": 0.7887565933818127,
+      "quality_safe": 0.7358591400737072,
+      "pred_cost": 6.20972204208374,
+      "pred_latency": 1328.796484375
+    },
+    {
+      "model": "Model8",
+      "task": "code",
+      "pred_quality": 0.7874896927403254,
+      "quality_safe": 0.735304890446548,
+      "pred_cost": 7.586769104003906,
+      "pred_latency": 1404.5633789062501
+    },
+    {
+      "model": "Model9",
+      "task": "code",
+      "pred_quality": 0.8312644823003101,
+      "quality_safe": 0.7891515834737111,
+      "pred_cost": 9.92000675201416,
+      "pred_latency": 1572.88916015625
+    },
+    {
+      "model": "Model10",
+      "task": "code",
+      "pred_quality": 0.853712671279505,
+      "quality_safe": 0.806181686400965,
+      "pred_cost": 12.460212707519531,
+      "pred_latency": 1723.2367187500001
+    }
+  ]
+}
